@@ -1,13 +1,23 @@
-<!-- <nav class="navbar bg-primary" data-bs-theme="dark">
+<nav class="navbar  bg-body-tertiary " data-bs-theme="dark">
+
   <div class="container-fluid">
-    <a class="navbar-brand">Roman to Integer Calculator</a>
-    <div>
-      <ul>
-        <li><a routerLink="/roman-integer" routerLinkActive="active" ariaCurrentWhenActive="page">Roman to Integer</a>
-        </li>
-        <li><a routerLink="/integer-roman" routerLinkActive="active" ariaCurrentWhenActive="page">Integer to Roman</a>
-        </li>
+   
+      <ul class="navbar-nav">
+        <form class="container-fluid justify-content-start">
+          <button class="btn btn-outline-primary btn-sm me-3 " type="button">
+            <a class="nav-link active" aria-current="page" routerLink="/" routerLinkActive="active">Home</a>
+          </button>
+          <button class="btn btn-outline-primary btn-sm me-1" type="button">
+            <a class="nav-link active " aria-current="page" routerLink="/roman-integer" routerLinkActive="active">To Integer</a>
+          </button>
+          <button class="btn btn-outline-primary btn-sm me-1" type="button">
+            <a class="nav-link active" aria-current="page" routerLink="/integer-roman" routerLinkActive="active">To Roman</a>
+          </button>
+        </form>
       </ul>
-    </div>
+     
   </div>
-</nav> -->
+  
+</nav>
+
+<router-outlet />
