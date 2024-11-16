@@ -1,0 +1,37 @@
+<div class="container mt-3">
+    <form>
+
+        <div class="row g-2">
+            <div class="col-sm-3">
+                <label for="inputNumber" class="form-label fw-bold fst-italic">Number</label>
+                
+            </div>
+            <div class="col-sm">
+                <div style="width: 130px;">
+                    <!-- Bind the class attribute romanNumber in a Two Way binding -->
+                    <input type="text" class="form-control" id="romanNumber"   
+                    name="romanNumber"  [(ngModel)]="inputNumber" maxlength="9"
+                    (keydown)="onKeydownEvent($event)"
+                    placeholder="Enter Number"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-2">
+            <div class="col-sm-3">
+                <label for="RomanVersion" class="form-label fw-bold fst-italic">Message</label>
+            </div>
+            <div class="col-sm-3">
+                <!-- One-Way binding with the msg class attribute -->
+                <label style="width: 300px;">{{msg}}</label>
+            </div>
+        </div>
+
+        <!-- Bind the Click Event to the Component -->
+        <!-- Set the Element Reference for the Button Element -->
+        <button type="button"  #btnCalculate class="btn btn-primary" 
+        (click)="onClickEvent()">Calculate</button>
+
+    </form>
+</div>
