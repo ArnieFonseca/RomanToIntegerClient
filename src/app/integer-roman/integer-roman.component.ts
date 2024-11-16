@@ -14,13 +14,14 @@ import { IntegerRomanData } from '../interfaces/integer-roman-data';
 export class IntegerRomanComponent {
   public inputNumber:string = AppConstants.Empty
   public msg:string = AppConstants.Empty
+  public textMessageColor:string  = AppConstants.Success
   private btnCalculateRef = viewChild<ElementRef<HTMLButtonElement>>(IntegerRomanConstant.BtnCalculate);
 
   constructor( private service: IntegerRomanService) { }
 
   onKeydownEvent(e: KeyboardEvent): void {
-    this.msg = AppConstants.Empty;                                // Clear message area
-    if (e.key == IntegerRomanConstant.Enter) {                    // When Enter Key is pressed   
+    this.msg = AppConstants.Empty;                                // Clear message area    
+    if (e.key == AppConstants.Enter) {                            // When Enter Key is pressed   
       this.btnCalculateRef()?.nativeElement.click()               // Raise Click Event Reference
     }
   }
@@ -37,6 +38,7 @@ export class IntegerRomanComponent {
         },
         error: (err: any) => {                                 // When failure
           console.log(err)
+          this.textMessageColor = AppConstants.Danger          // Change Color to Error Detected
           this.msg = `${err.name} ${err.message}` }            // Display Server error   
       })      
     }
@@ -45,6 +47,8 @@ export class IntegerRomanComponent {
   validateInput():boolean {
     const arr:string[] =  [...this.inputNumber.trim()]
     const rc:boolean =    arr.every(x => IntegerRomanConstant.numericMask.includes(x))
+
+    this.textMessageColor = AppConstants.Danger                 // Change Color to Error Detected
 
     if (arr.length == AppConstants.Zero) {                      // When Empty Input
       this.msg = "Input is empty"
@@ -60,6 +64,7 @@ export class IntegerRomanComponent {
 
     }
 
+    this.textMessageColor = AppConstants.Success               // Change Color to OK
     return true
   }
 }

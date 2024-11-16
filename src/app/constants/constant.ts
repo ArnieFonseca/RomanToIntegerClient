@@ -6,6 +6,11 @@ import { Injectable } from '@angular/core';
 export class AppConstants {
     public static readonly Zero:number = 0;
     public static readonly Empty:string = "";
+    
+    public static readonly Success:string ="text-dark fw-semibold"    
+    public static readonly Danger:string ="text-danger"
+
+    public static readonly Enter:string = "Enter";
 }
 
 @Injectable({
