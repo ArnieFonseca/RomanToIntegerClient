@@ -33,8 +33,7 @@ export class IntegerRomanComponent {
       data.subscribe({
         next: (res: IntegerRomanData) => {                      // When Data arrived
           console.log("Result  from Service ", res)
-          this.msg = res.answer                                 // Display the data
- 
+          this.msg = res.answer                                 // Display the data 
         },
         error: (err: any) => {                                 // When failure
           console.log(err)
@@ -60,8 +59,13 @@ export class IntegerRomanComponent {
     }
     if (rc == false) {                                          // When invalid number
       this.msg = "Input is not numeric"
-      return false
-
+      return false      
+    }
+    else {
+      if (parseInt(this.inputNumber) > IntegerRomanConstant.numericLimit)  {
+        this.msg = "Input is over the 3,999 limit"              // When over the limit
+        return false  
+      }
     }
 
     this.textMessageColor = AppConstants.Success               // Change Color to OK

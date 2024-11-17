@@ -30,4 +30,5 @@ export class IntegerRomanConstant {
     public static readonly Enter:string = "Enter";
     public static readonly EnterValidNumber:string ='Please enter a valid Number'
     public static readonly numericMask:string = "0123456789" 
+    public static readonly numericLimit:number = 3999
 }
