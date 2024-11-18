@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { RomanService } from '../services/roman.service' 
 import { RomanData } from '../interfaces/roman-data';
 import { AppConstants, RomanIntegerConstant } from '../constants/constant';
+ 
 
 @Component({
   selector: 'app-roman-integer',
@@ -28,6 +29,7 @@ export class RomanIntegerComponent {
     }
     else {                                                        // Otherwise process input
       console.log("Calling Service ", this.romanNumber)
+       
       let data = this.service.convertToInteger(this.romanNumber)  // Call Service
       data.subscribe({
         next: (res: RomanData) => {                               // When Data arrived
