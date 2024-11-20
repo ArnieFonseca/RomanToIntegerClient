@@ -1,5 +1,5 @@
 {
     "endpoints": {
-        "url":"https://localhost:44381"
+        "url":"http://localhost:5186"
     }
 }

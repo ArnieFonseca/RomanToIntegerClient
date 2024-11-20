@@ -5,11 +5,10 @@ import { IntegerRomanService } from '../services/integer-roman.service';
 import { IntegerRomanData } from '../interfaces/integer-roman-data';
 
 @Component({
-  selector: 'app-integer-roman',
-  standalone: true,
-  imports: [FormsModule],
-  templateUrl: './integer-roman.component.html',
-  styleUrl: './integer-roman.component.css'
+    selector: 'app-integer-roman',
+    imports: [FormsModule],
+    templateUrl: './integer-roman.component.html',
+    styleUrl: './integer-roman.component.css'
 })
 export class IntegerRomanComponent {
   public inputNumber:string = AppConstants.Empty

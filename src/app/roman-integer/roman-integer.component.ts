@@ -6,11 +6,10 @@ import { AppConstants, RomanIntegerConstant } from '../constants/constant';
  
 
 @Component({
-  selector: 'app-roman-integer',
-  standalone: true,
-  imports: [FormsModule],
-  templateUrl: './roman-integer.component.html',
-  styleUrl: './roman-integer.component.css',
+    selector: 'app-roman-integer',
+    imports: [FormsModule],
+    templateUrl: './roman-integer.component.html',
+    styleUrl: './roman-integer.component.css'
 })
 export class RomanIntegerComponent {
   public msg: string =  AppConstants.Empty ;
