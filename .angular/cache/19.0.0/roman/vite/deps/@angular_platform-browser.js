@@ -34,13 +34,14 @@ import {
   withEventReplay,
   withHttpTransferCacheOptions,
   withI18nSupport,
+  withIncrementalHydration,
   withNoHttpTransferCache
-} from "./chunk-2MFV7HJK.js";
-import "./chunk-33SPSPCS.js";
+} from "./chunk-IDTJUIGS.js";
+import "./chunk-NIOTHEFW.js";
 import {
   getDOM
-} from "./chunk-NLDELHJ4.js";
-import "./chunk-PSGA3BG2.js";
+} from "./chunk-XLK3U3V6.js";
+import "./chunk-2RZ32MDT.js";
 export {
   BrowserModule,
   By,
@@ -67,6 +68,7 @@ export {
   withEventReplay,
   withHttpTransferCacheOptions,
   withI18nSupport,
+  withIncrementalHydration,
   withNoHttpTransferCache,
   BrowserDomAdapter as ɵBrowserDomAdapter,
   BrowserGetTestability as ɵBrowserGetTestability,

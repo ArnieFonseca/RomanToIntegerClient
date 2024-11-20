@@ -1,52 +1,52 @@
 {
-  "hash": "d4040ebd",
-  "configHash": "9c990ee0",
-  "lockfileHash": "c2947627",
-  "browserHash": "78e2e044",
+  "hash": "559a1776",
+  "configHash": "add370a1",
+  "lockfileHash": "6d01992d",
+  "browserHash": "9afca3dd",
   "optimized": {
     "@angular/common/http": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "8651e697",
+      "fileHash": "25149070",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "53555184",
+      "fileHash": "dc2467d4",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "5625a09f",
+      "fileHash": "68e04038",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "acc7ad91",
+      "fileHash": "3c4735c6",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "691664e2",
+      "fileHash": "52154ade",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-2MFV7HJK": {
-      "file": "chunk-2MFV7HJK.js"
+    "chunk-IDTJUIGS": {
+      "file": "chunk-IDTJUIGS.js"
     },
-    "chunk-33SPSPCS": {
-      "file": "chunk-33SPSPCS.js"
+    "chunk-NIOTHEFW": {
+      "file": "chunk-NIOTHEFW.js"
     },
-    "chunk-NLDELHJ4": {
-      "file": "chunk-NLDELHJ4.js"
+    "chunk-XLK3U3V6": {
+      "file": "chunk-XLK3U3V6.js"
     },
-    "chunk-PSGA3BG2": {
-      "file": "chunk-PSGA3BG2.js"
+    "chunk-2RZ32MDT": {
+      "file": "chunk-2RZ32MDT.js"
     }
   }
 }
