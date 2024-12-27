@@ -19,7 +19,7 @@ export class IntegerRomanService {
   // Call Rest API
   public convertToRoman(inputNumber:number):Observable<IntegerRomanData> {
 
-    let url =  this.service.getURL()
+    let url =  this.service.getDomain()
     
     console.log("Calling with convertToRoman")
     let answer = this.httpClient.get<IntegerRomanData>(`${url}${this.serviceName}${inputNumber}`)

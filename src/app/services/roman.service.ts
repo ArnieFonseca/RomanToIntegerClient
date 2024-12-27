@@ -18,7 +18,7 @@ export class RomanService {
   // Call Rest API
   public convertToInteger(romanNumber:string):Observable<RomanData> {
     
-    let url =  this.service.getURL()  
+    let url =  this.service.getDomain()  
 
     console.log("Service called",romanNumber )
     let answer = this.httpClient.get<RomanData>(`${url}${this.serviceName}${romanNumber.trim()}`)

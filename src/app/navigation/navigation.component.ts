@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { environment } from '../../environments/environment';
 
 @Component({
     selector: 'app-navigation',
@@ -8,5 +9,5 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
     styleUrl: './navigation.component.css'
 })
 export class NavigationComponent {
-
+    environmentName =  environment.environmentName
 }

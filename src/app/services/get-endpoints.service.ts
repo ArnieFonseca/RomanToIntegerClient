@@ -9,8 +9,8 @@ export class GetEndpointsService {
   //url:string = "/assets/end-points.json"
   constructor() {}
 
-  public getURL():any{
+  public getDomain():any{
 
-    return data.endpoints.url 
+    return data.endpoints.domain 
   }
 }
