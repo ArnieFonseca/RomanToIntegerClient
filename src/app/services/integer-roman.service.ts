@@ -22,7 +22,7 @@ export class IntegerRomanService {
     let url =  this.service.getDomain()
     
     console.log("Calling with convertToRoman")
-    let answer = this.httpClient.get<IntegerRomanData>(`${url}${this.serviceName}${inputNumber}`)
+    let answer = this.httpClient.get<IntegerRomanData>(`${url}${this.serviceName}${inputNumber}`, { withCredentials: true })
     return answer
   }
 }

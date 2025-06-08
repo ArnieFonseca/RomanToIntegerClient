@@ -21,7 +21,7 @@ export class RomanService {
     let url =  this.service.getDomain()  
 
     console.log("Service called",romanNumber )
-    let answer = this.httpClient.get<RomanData>(`${url}${this.serviceName}${romanNumber.trim()}`)
+    let answer = this.httpClient.get<RomanData>(`${url}${this.serviceName}${romanNumber.trim()}`, { withCredentials: true })
     return answer
 
   }

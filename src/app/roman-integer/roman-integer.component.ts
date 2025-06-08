@@ -8,8 +8,7 @@ import { AppConstants, RomanIntegerConstant } from '../constants/constant';
 @Component({
     selector: 'app-roman-integer',
     imports: [FormsModule],
-    templateUrl: './roman-integer.component.html',
-    styleUrl: './roman-integer.component.css'
+    templateUrl: './roman-integer.component.html'
 })
 export class RomanIntegerComponent {
   public msg: string =  AppConstants.Empty ;

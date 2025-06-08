@@ -7,8 +7,7 @@ import { IntegerRomanData } from '../interfaces/integer-roman-data';
 @Component({
     selector: 'app-integer-roman',
     imports: [FormsModule],
-    templateUrl: './integer-roman.component.html',
-    styleUrl: './integer-roman.component.css'
+    templateUrl: './integer-roman.component.html'
 })
 export class IntegerRomanComponent {
   public inputNumber:string = AppConstants.Empty

@@ -5,8 +5,7 @@ import { environment } from '../../environments/environment';
 @Component({
     selector: 'app-navigation',
     imports: [RouterOutlet, RouterLink, RouterLinkActive,],
-    templateUrl: './navigation.component.html',
-    styleUrl: './navigation.component.css'
+    templateUrl: './navigation.component.html' 
 })
 export class NavigationComponent {
     environmentName =  environment.environmentName
